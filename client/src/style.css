@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  .wrapper-rr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+  }
+
+
+  form{
+    border-radius: 18px;
+    width: 30% ;
+    padding: 40px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    color: #fff;
+    box-shadow: 0 0 50px rgba(0, 0, 0, .3);
+}
+
+.btn-primary{
+    width: 100%;
+    border: none;
+    border-radius: 50px;
+    background: rgb(255, 35, 218);
+}
+
+
+.form-control{
+    color: rgba(0,0,0,.87);
+    border-bottom-color: rgba(0,0,0,.42);
+    box-shadow: none ;
+    border: none;
+    border-bottom: 1px solid;
+    border-radius: 4px 4px 0 0;
+    }
+ h4{
+    font-size: 2rem ;
+    font-weight: 600;
+ }  
+ .registor-link{
+  text-align: center;
+  margin-top: 25px;
+  margin-right: 20px;
+
+ }
+ .registor-link  a {
+  text-decoration: none;
+  color:#f4157e;
+  font-weight: 500;
+  font-size: 18px;
+ }
+
+ .form-label{
+    font-weight: 500 ;
+ }
+ 
+ 
+@media only screen and (max-width: 600px) {
+  form  {
+        width: 100% ;
+    }
+  }
+
+
+  .container-form{
+    width: 740px;
+    height: 500px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(9px);
+    color: #fff;
+    box-shadow: 0 0 50px rgba(0, 0, 0, .3);
+    border-radius: 12px;
+    padding: 60px 30px;
+    
+  }
+  
+
+  .bbbt{
+    width: 46%;
+    height: 45px;
+    color:#f4157e;
+    margin: 10px;
+    border: none;
+    list-style-type: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+  }
+  .bbbt a{
+    text-decoration: none;
+    color: white;
+  }
+  p.heading{
+    font-size: 2.3rem;
+    font-weight: 600;
+    padding: 2px 2px;
+  }
+
+  .cards {
+    width: 34%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    align-content: center;
+    margin: 0 auto;
+  }
+  .cards-header {
+    height: 30%;
+    background: #5d6770;
+    color : white;
+    text-align: center;
+  }
+
+  .cards-header p {
+    font-size: 23px;
+
+  }
+  .containers{
+    padding: 6px 20px;
+    text-align: center;
+  }
+  .tblock
+  {
+    display:block;
+    font-size: 19px;
+  }
+  .cpa
+  {
+    width: 100%;
+    display: inline-block;
+  }
+  .showhide
+  {
+    position: absolute;
+   right: 4px;
+   font-size: 23px;
+   margin-top: -8px;
+   border: none;
+   
+  }
+  .pass-box{
+    position: relative;
+  }
