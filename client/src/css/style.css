@@ -12,7 +12,6 @@
     background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
   }
 
-
   form{
     border-radius: 18px;
     width: 30% ;
@@ -74,9 +73,7 @@
     backdrop-filter: blur(12px);
     color: #fff;
     box-shadow: 0 0 50px rgba(0, 0, 0, .3);
-    border-radius: 12px;
-    
-    
+    border-radius: 12px; 
   } 
   
 
@@ -118,7 +115,7 @@
     background: #5d6770;
     color : white;
     text-align: center;
-  } */
+  } 
 
   .cards-header p {
     font-size: 23px;
@@ -145,7 +142,6 @@
    font-size: 24px;
    margin-top: -8px;
    border: none;
-   
   }
   .pass-box{
     position: relative;
