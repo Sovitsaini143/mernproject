@@ -42,7 +42,7 @@ function Myregisterpage() {
     }
     else
      {
-        const res = await fetch( `${Myapi}/registoruser`  , {
+        const res = await fetch( `${Myapi}/registoruser` , {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
