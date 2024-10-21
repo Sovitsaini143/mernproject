@@ -1,5 +1,6 @@
 import React,{ useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import Myapi from '../shares/Myapi';
 import { FaEye } from "react-icons/fa";
 import { FaEyeSlash } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
@@ -41,7 +42,7 @@ function Myregisterpage() {
     }
     else
      {
-        const res = await fetch("http://localhost:7000/registoruser", {
+        const res = await fetch( `${Myapi}/login`  , {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({

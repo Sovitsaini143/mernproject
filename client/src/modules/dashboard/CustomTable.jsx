@@ -1,6 +1,7 @@
 import React, { useState,useEffect, Fragment } from "react";
 import {Link} from 'react-router-dom';
 import axios from 'axios';
+import Myapi from "../shares/Myapi";
 import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';
 import VisibilityIcon from '@mui/icons-material/Visibility';
@@ -11,7 +12,7 @@ import VisibilityIcon from '@mui/icons-material/Visibility';
 function CustomTable() {
     const [user, setuser] = useState([])
     const getalldata = () => {
-        axios.get("http://localhost:7000/alldata")
+        axios.get(`${Myapi}/alldata`)
         .then((y) => {
             // console.log(y.data);
             setuser(y.data);
@@ -25,9 +26,9 @@ function CustomTable() {
  
     const deletedata = async(id)=>
         {
-            await axios.delete(`http://localhost:7000/deleterecord/${id}`)
+            await axios.delete(`${Myapi}/deleterecord/${id}`)
             .then((y)=>{
-                // console.log(y);
+                console.log(y);
                 getalldata();
             })
         }

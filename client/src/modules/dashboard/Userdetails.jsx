@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
-
-import axios from 'axios'
+import Myapi from '../shares/Myapi';
+import axios from 'axios';
 import { useParams } from 'react-router-dom'
 
 function Userdetails() {
@@ -11,7 +11,7 @@ function Userdetails() {
   const [userdetail,userset]=useState({})
 
 const singleuser= ()=>{
-  axios.get(`http://localhost:7000/singleuser/${id}`).then((y)=>{
+  axios.get(`${Myapi}/singleuser/${id}`).then((y)=>{
       // console.log(y);
       userset(y.data);
   })

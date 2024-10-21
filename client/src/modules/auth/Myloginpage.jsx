@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Myapi from '../shares/Myapi';
 import { useNavigate } from 'react-router-dom';
 import { MdEmail } from "react-icons/md";
 import { MdWifiPassword } from "react-icons/md";
@@ -36,7 +37,7 @@ function Myloginpage() {
       }
       else
       {
-          const datares = await fetch("http://localhost:7000/login", {
+          const datares = await fetch( `${Myapi}/login` , {
               method: "POST",
               headers: { "Content-Type": "application/json" },
               body: JSON.stringify({

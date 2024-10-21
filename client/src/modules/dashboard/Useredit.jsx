@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from  'react';
 import axios from 'axios';
 import { Link, useNavigate, useParams } from 'react-router-dom';
-
+import Myapi from '../shares/Myapi';
 
 function Useredit() {
 
@@ -30,7 +30,7 @@ function Useredit() {
 
     
     const edituser = ()=>{
-        axios.get(`http://localhost:7000/singleuser/${id}`).then((y)=>{
+        axios.get(`${Myapi}/singleuser/${id}`).then((y)=>{
             // console.log(y);
            setuser(y.data);
          });
@@ -42,7 +42,7 @@ useEffect(()=>{
 
 const changedetails = async()=>{
     const { email,fullname,phone,address,dob,pass} = user;
-    const res = await fetch(`http://localhost:7000/updateuser/${id}`, {
+    const res = await fetch(`${Myapi}/updateuser/${id}`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
