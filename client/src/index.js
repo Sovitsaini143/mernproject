@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.js";
-import "../src/style.css";
+import './css/style.css';
 import {Routes, Route,BrowserRouter} from "react-router-dom";
 import Myloginpage from './modules/auth/Myloginpage';
 import Myregisterpage from './modules/auth/Myregisterpage';
@@ -13,12 +13,11 @@ import Userdetails from './modules/dashboard/Userdetails';
 
 
 
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-
-<BrowserRouter>
+    
+    <BrowserRouter>
       <Routes>
           <Route path='' element={<Myloginpage/>}></Route>
           <Route path='registor' element={<Myregisterpage/>}></Route>
@@ -34,7 +33,7 @@ root.render(
 
       </Routes>
     </BrowserRouter>
-    
+
   </React.StrictMode>
 );
 
