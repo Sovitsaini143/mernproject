@@ -9,6 +9,7 @@ import { MdDateRange,MdWifiPassword } from "react-icons/md";
 
 
 
+
 function Myregisterpage() {
  const navigat = useNavigate();
 
@@ -49,7 +50,7 @@ function Myregisterpage() {
         });
         const data = await res.json();
         console.log(data);
-        alert("register is successfull");
+        alert("Register is successfull");
         navigat("/");
 
       
@@ -78,62 +79,62 @@ const showhide = ()=>{
 
   return (
     
-
-<div className='wrapper-rr' >   
-    <div className='row justify-content-center'>
-        <div className='col-md-8 p-3 container-form '>
+    <div className='wrapper-rr'> 
+    <forms>
+    <div className='container'>
+    <div className='row justify-content-center '>
+        <div className='col-md-8 p-4  container-form'>
             <div className='container-fluid'>
                 <div className='row'>
                 
                 <div className='col-12 text-center'>
                         <div className="mb-3">
-                          <p className='heading'> Registor Page</p>
+                          <p className='h2 '> Register Page </p>
                         </div>
                     </div>
                     <div className='col-md-6'>
                         <div className="mb-3">
-                            <label className="form-label tblock"> <MdEmail /> Email address</label>
-                            <input type="email" className="form-control" name='email' value={user.email} onInput={updateuseer} />
+                            <label className="form-label tblock"> <  MdEmail/>Email address</label>
+                            <input type="email" className="form-control" name='email' value={user.email} onInput={updateuseer}/>
                            
                         </div>
                     </div>
                     <div className='col-md-6'>
                         <div className="mb-3">
                             <label className="form-label tblock"> <FaUser /> FullName</label>
-                            <input type="text" className="form-control" name='fullname' value={user.fullname} onInput={updateuseer} />
+                            <input type="text" className="form-control" name='fullname' value={user.fullname} onInput={updateuseer}/>
                            
                         </div>
                     </div>
                     <div className='col-md-6'>
                         <div className="mb-3">
-                            <label className="form-label tblock"> <FaPhoneAlt /> Phone No</label>
-                            <input type="text" className="form-control" name='phone' value={user.phone} onInput={updateuseer} />
+                            <label className="form-label tblock"> < FaPhoneAlt /> Phone No</label>
+                            <input type="text" className="form-control" name='phone' value={user.phone} onInput={updateuseer}/>
                             
                         </div>
                     </div>
                     <div className='col-md-6'>
                         <div className="mb-3">
                             <label className="form-label tblock"> <MdDateRange /> DOB</label>
-                            <input type="date" className="form-control" name='dob' value={user.dob} onInput={updateuseer} />
+                            <input type="date" className="form-control" name='dob' value={user.dob} onInput={updateuseer}/>
                             
                         </div>
                     </div>
                     <div className='col-md-6'>
                         <div className="mb-3">
-                            <label className="form-label tblock"> <FaHome /> Address</label>
-                            <select className='form-select' name='address' value={user.address} onChange={updateuseer}>
+                            <label className="form-label tblock"> < FaHome /> Address</label>
+                           <select className='form-select' name='address' value={user.address} onChange={updateuseer}>
+                            <option>UK</option>
                             <option>MP</option>
                             <option>UP</option>
-                            <option>UK</option>
-                            <option>HP</option>
-                            
+                            <option>HR</option>
                            </select>
                           
                         </div>
                     </div>
                     <div className='col-md-6'>
                         <div className="mb-3 pass-box">
-                        <label className="form-label tblock"> <MdWifiPassword /> Password</label>
+                            <label className="form-label tblock"> < MdWifiPassword /> Password</label>
                             <input type={passshow} className="form-control cpa" name='pass' value={user.pass} onInput={updateuseer}/>
                             <button type="button" className="btn showhide  text-primary ms-2" onClick={showhide}> {passshow==="password" ? <FaEye/> : <FaEyeSlash/>}</button>
                            
@@ -141,10 +142,8 @@ const showhide = ()=>{
                     </div>
                     <div className='col-12 text-center'>
                         <div className="mb-3">
-                        <button type="button" className="bbbt btn btn-primary" onClick={mysubmitdata}>Register</button>
-                <button type="submit" className="bbbt btn btn-primary"  ><Link to="/">Login</Link></button>
-
-                          
+                           <button type="button" className='bbbt btn btn-primary' onClick={mysubmitdata}>Registor Now</button>
+                           <button type="submit" className='bbbt btn btn-primary'><Link to="/" >Login </Link></button>
                         </div>
                     </div>
                 </div>
@@ -152,8 +151,9 @@ const showhide = ()=>{
 
         </div>
     </div>
-
-    </div>
+</div>
+</forms>
+</div>
       
     
   )

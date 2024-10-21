@@ -68,19 +68,16 @@
     }
   }
 
-
-  .container-form{
-    width: 740px;
-    height: 500px;
+ .container-form{
     background: transparent;
     border: 2px solid rgba(255, 255, 255, .2);
-    backdrop-filter: blur(9px);
+    backdrop-filter: blur(12px);
     color: #fff;
     box-shadow: 0 0 50px rgba(0, 0, 0, .3);
     border-radius: 12px;
-    padding: 60px 30px;
+    /* padding: 60px 30px; */
     
-  }
+  } 
   
 
   .bbbt{
@@ -88,6 +85,7 @@
     height: 45px;
     color:#f4157e;
     margin: 10px;
+    margin-top: 20px;
     border: none;
     list-style-type: none;
     border-radius: 40px;
@@ -120,7 +118,7 @@
     background: #5d6770;
     color : white;
     text-align: center;
-  }
+  } */
 
   .cards-header p {
     font-size: 23px;
@@ -144,7 +142,7 @@
   {
     position: absolute;
    right: 4px;
-   font-size: 23px;
+   font-size: 24px;
    margin-top: -8px;
    border: none;
    
@@ -152,3 +150,9 @@
   .pass-box{
     position: relative;
   }
+
+
+
+
+
+  
