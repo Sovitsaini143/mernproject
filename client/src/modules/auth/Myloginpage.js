@@ -19,7 +19,7 @@ function Myloginpage() {
   });
 
   const loginuseer = (e)=>{
-      console.log(e.target.value);
+      // console.log(e.target.value);
       const {name,value} = e.target;
       setlogin((b)=>{
         return{
@@ -45,7 +45,7 @@ function Myloginpage() {
               })
           });
           const resdata = await datares.json();
-          console.log(resdata);
+          // console.log(resdata);
           if(resdata.status===220)
           {
               alert("User login Successfull");
