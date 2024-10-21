@@ -1,5 +1,5 @@
 import React from 'react';
-import CustomTable from './CustomTable.jsx';
+import CustomTable from './CustomTable.js';
 
 function Mainpage() {
 
